@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Нафаси солим — соляная пещера в Душанбе</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&family=Cormorant+Garamond:wght@500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f3fbfd;--surf:#ffffff;--ink:#0b3a4a;--mut:#4d7a88;--acc:#0aa6c8;--acc2:#06d0e8;--deep:#075a78;--line:#cfe9f0;--glow:rgba(10,166,200,.18);box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#06222c;--surf:#0b3340;--ink:#e6f7fb;--mut:#8fc0ce;--acc:#27c8e6;--acc2:#5ee6f5;--deep:#0b4b63;--line:#14485a;--glow:rgba(39,200,230,.22)}}
+:root[data-theme="dark"]{--bg:#06222c;--surf:#0b3340;--ink:#e6f7fb;--mut:#8fc0ce;--acc:#27c8e6;--acc2:#5ee6f5;--deep:#0b4b63;--line:#14485a;--glow:rgba(39,200,230,.22)}
+html{scroll-behavior:smooth;scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Manrope,system-ui,-apple-system,Segoe UI,Arial,sans-serif;line-height:1.6}
+h1,h2,h3{font-family:"Cormorant Garamond",Georgia,serif;margin:0;line-height:1.1}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:color-mix(in srgb,var(--bg) 85%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{font-family:"Cormorant Garamond",Georgia,serif;font-size:26px;font-weight:700;color:var(--deep)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .logo{color:var(--acc2)}}
+nav{display:flex;gap:22px;font-size:14px;font-weight:600;color:var(--mut)}
+nav a:hover{color:var(--acc)}
+@media(max-width:640px){nav{display:none}}
+.btn{display:inline-block;padding:14px 26px;border-radius:999px;font-weight:800;font-size:15px;transition:.2s}
+.btn.p{background:linear-gradient(135deg,var(--acc),var(--acc2));color:#04303c;box-shadow:0 10px 30px var(--glow)}
+.btn.p:hover{transform:translateY(-2px)}
+.btn.o{border:2px solid var(--acc);color:var(--acc)}
+.hero{position:relative;overflow:hidden;background:linear-gradient(160deg,#04607f 0%,#0aa6c8 55%,#5ee6f5 100%);color:#fff;padding:88px 0 110px}
+.hero:before,.hero:after{content:"";position:absolute;border-radius:50%;background:rgba(255,255,255,.12)}
+.hero:before{width:420px;height:420px;right:-120px;top:-120px}
+.hero:after{width:260px;height:260px;left:-80px;bottom:-110px}
+.hero .wrap{position:relative;z-index:1}
+.tag{display:inline-block;padding:6px 16px;border:1px solid rgba(255,255,255,.55);border-radius:999px;font-size:13px;font-weight:600;letter-spacing:.04em;margin-bottom:22px}
+.hero h1{font-size:clamp(46px,9vw,92px);font-weight:700}
+.hero p{max-width:560px;font-size:18px;margin:22px 0 32px;opacity:.95}
+.hero .btn{margin:0 8px 10px 0}.hero .btn.o{border-color:#fff;color:#fff}
+.hero .btn.p{background:#fff;color:var(--deep)}
+.hero .chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:40px}
+.chips span{background:rgba(255,255,255,.18);padding:8px 16px;border-radius:999px;font-size:13px;font-weight:600}
+section{padding:80px 0}
+.sh{text-align:center;margin-bottom:44px}
+.sh small{color:var(--acc);font-weight:800;letter-spacing:.14em;font-size:12px;text-transform:uppercase}
+.sh h2{font-size:clamp(34px,5vw,52px);margin-top:8px}
+.grid{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}
+.card{background:var(--surf);border:1px solid var(--line);border-radius:24px;padding:28px;transition:.25s}
+.card:hover{transform:translateY(-4px);box-shadow:0 18px 40px var(--glow)}
+.ic{width:52px;height:52px;border-radius:16px;background:linear-gradient(135deg,var(--acc),var(--acc2));display:grid;place-items:center;font-size:24px;margin-bottom:16px}
+.card h3{font-size:28px;margin-bottom:8px}
+.card p{margin:0;color:var(--mut);font-size:15px}
+.alt{background:var(--surf);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.alt .card{background:var(--bg)}
+.ben{text-align:center}
+.ben .ic{margin:0 auto 14px}
+.price{text-align:center;position:relative}
+.price .n{font-family:"Cormorant Garamond",Georgia,serif;font-size:60px;font-weight:700;color:var(--acc);line-height:1}
+.price .v{font-weight:800;font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:var(--mut);margin:6px 0 12px}
+.price .was{display:inline-block;background:var(--bg);border:1px dashed var(--acc);border-radius:999px;padding:4px 16px;font-weight:800;margin-bottom:14px}
+.price.top{border:2px solid var(--acc);box-shadow:0 18px 44px var(--glow)}
+.note{text-align:center;color:var(--mut);font-size:14px;margin-top:26px}
+.promo{background:linear-gradient(135deg,#075a78,#0aa6c8);color:#fff;border-radius:28px;padding:44px;text-align:center;margin-top:36px}
+.promo h3{font-size:40px}
+.promo b{font-family:"Cormorant Garamond",Georgia,serif;font-size:84px;line-height:1;display:block;margin:6px 0}
+.info{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}
+.info .card h3{font-size:24px}
+.info .card p{color:var(--ink);font-weight:600}
+.info .card small{display:block;color:var(--mut);font-weight:400;margin-top:6px}
+.cta{text-align:center;margin-top:34px;display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+footer{background:#04303c;color:#bfe6ef;text-align:center;padding:32px 20px;font-size:13px}
+footer a{color:#5ee6f5}
+</style>
+</head>
+<body>
+<header><div class="wrap"><a class="logo" href="#top">Нафаси солим</a>
+<nav><a href="#services">Услуги</a><a href="#benefit">Польза</a><a href="#prices">Цены</a><a href="#contacts">Контакты</a></nav>
+<a class="btn p" style="padding:10px 20px;font-size:14px" href="tel:+992888995556">Позвонить</a></div></header>
+
+<div class="hero" id="top"><div class="wrap">
+<span class="tag">Лечебный центр · Маркази Табобати · Душанбе</span>
+<h1>Нафаси солим</h1>
+<p>Полное расслабление для тела и души. Очисти дыхание, сними стресс и почувствуй лёгкость уже после первого посещения.</p>
+<a class="btn p" href="tel:+992888995556">+992 888 99 55 56</a><a class="btn o" href="https://wa.me/992888995556">WhatsApp</a>
+<div class="chips"><span>Соляная пещера</span><span>Массажи рагмоли</span><span>Фитобочка</span><span>Хиджама</span></div>
+</div></div>
+
+<section id="services"><div class="wrap">
+<div class="sh"><small>Что мы предлагаем</small><h2>Наши услуги</h2></div>
+<div class="grid">
+<div class="card"><div class="ic">🧂</div><h3>Соляная пещера</h3><p>Бронхит, аллергия, иммунитет. Галокамера с эффектом морского климата: дышится легче — как после отпуска.</p></div>
+<div class="card"><div class="ic">💆</div><h3>Массажи рагмоли</h3><p>Остеохондроз, протрузия, грыжа.</p></div>
+<div class="card"><div class="ic">🌿</div><h3>Фитобочка</h3><p>Воспаления.</p></div>
+<div class="card"><div class="ic">🥤</div><h3>Кислородный коктейль</h3><p>Вкусно и полезно.</p></div>
+</div></div></section>
+
+<section id="benefit" class="alt"><div class="wrap">
+<div class="sh"><small>Соляная пещера</small><h2>Польза соляной пещеры</h2></div>
+<div class="grid">
+<div class="card ben"><div class="ic">🫁</div><h3>Улучшает дыхание</h3></div>
+<div class="card ben"><div class="ic">🛡️</div><h3>Повышает иммунитет</h3></div>
+<div class="card ben"><div class="ic">🧘</div><h3>Снижает стресс</h3></div>
+<div class="card ben"><div class="ic">😊</div><h3>Улучшает настроение</h3></div>
+</div>
+<p class="note">Соляная пещера очищает, оздоравливает, успокаивает, укрепляет.</p>
+</div></section>
+
+<section id="prices"><div class="wrap">
+<div class="sh"><small>Соляная пещера</small><h2>Это не разовая процедура, а курс оздоровления</h2></div>
+<div class="grid">
+<div class="card price"><div class="n">6</div><div class="v">посещений · Лайт</div><div class="was">было 299 с</div><p>Идеально для лёгкой профилактики и знакомства с процедурой.</p></div>
+<div class="card price"><div class="n">8</div><div class="v">посещений · Стандарт</div><div class="was">было 399 с</div><p>Для устойчивого эффекта и восстановления после простуд.</p></div>
+<div class="card price top"><div class="n">12</div><div class="v">посещений · Премиум</div><div class="was">было 599 с</div><p>Максимальное укрепление дыхания и иммунитета для всей семьи.</p></div>
+</div>
+<p class="note">Подходит детям с 1 года и взрослым. Каждое посещение длится 40 минут.</p>
+<p class="note">Цены взяты из Instagram центра — актуальные условия уточняйте по телефону. Доступна рассрочка без переплат.</p>
+</div></section>
+
+<section id="contacts" class="alt"><div class="wrap">
+<div class="sh"><small>Приходите</small><h2>Контакты</h2></div>
+<div class="info">
+<div class="card"><h3>Адрес</h3><p>г. Душанбе, ул. Ахмада Дониша, 9А, район Шохмансур</p><small>В Instagram: ул. А. Дониш 9/1, 2 этаж. Ориентир: аэропорт, бари доми технасила.</small></div>
+<div class="card"><h3>Часы работы</h3><p>Ежедневно 10:00–20:00</p><small>По данным Instagram. В 2GIS указано открытие в 09:00 — уточняйте по телефону.</small></div>
+<div class="card"><h3>Телефон</h3><p><a href="tel:+992888995556">+992 888 99 55 56</a></p><small>Для записи на соляную пещеру в прайсе указан также <a href="tel:+992990090638">+992 99 00 90 638</a></small></div>
+</div>
+<div class="cta"><a class="btn p" href="https://wa.me/992888995556">Написать в WhatsApp</a><a class="btn o" href="https://www.instagram.com/nafasi__solim/">Instagram @nafasi__solim</a><a class="btn o" href="https://2gis.tj/dushanbe/firm/70000001104382420">Маршрут в 2GIS</a></div>
+</div></section>
+
+<footer>© Нафаси солим · Душанбе<br>Информация взята из официальных аккаунтов: <a href="https://www.instagram.com/nafasi__solim/">Instagram</a> и <a href="https://2gis.tj/dushanbe/firm/70000001104382420">2GIS</a></footer>
+</body>
+</html>
